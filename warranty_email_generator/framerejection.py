@@ -47,9 +47,9 @@ elif choice == "2":
     purchase_date_str = input("Enter purchase date (YYYY-MM-DD): ").strip()
     
     try:
-        purchase_date = datetime.strptime(purchase_date_str, "%d-%m-%y")
+        purchase_date = datetime.strptime(purchase_date_str, "%Y-%m-%d")
         expiry_date = purchase_date + timedelta(days=18 * 30)  # roughly 18 months
-        expiry_date_str = expiry_date.strftime("%d-%m-%y")
+        expiry_date_str = expiry_date.strftime("%Y-%m-%d")
     except ValueError:
         expiry_date_str = "Invalid date entered"
     
