@@ -50,7 +50,7 @@ def generate_email():
         email = f"""
 Subject: Warranty Claim – Accidental Damage – {frame_name}
 
-Dear Support Team,
+Dear Sir/Madam,
 
 Please note that this warranty claim for account {account_number} has been rejected due to suspected accidental damage.
 
@@ -59,8 +59,15 @@ Frame: {frame_name}
 Reason:
     {reason_text}
 
-Regards,
-Dominic Sellers
+To better assist you with the next steps, we have provided two options:
+
+1. Return to Opticians:
+Please let us know if you'd like the frame returning.
+2. Eco-Friendly Recycling:
+Alternatively, we can recycle the frame here at Eyespace on your behalf.
+
+
+Best Regards,
 Returns Department
 """
 
@@ -92,6 +99,15 @@ Warranty expired on: {expiry_date_str}
 
 Reason:
     {reason_text}
+
+
+To better assist you with the next steps, we have provided two options:
+
+1. Return to Opticians:
+Please let us know if you'd like the frame returning.
+2. Eco-Friendly Recycling:
+Alternatively, we can recycle the frame here at Eyespace on your behalf.
+
 
 Regards,
 Dominic Sellers
